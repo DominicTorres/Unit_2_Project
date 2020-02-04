@@ -5,8 +5,8 @@
    Tutorial 10
    Case Problem 1
   
-   Author: 
-   Date:   
+   Author: Dominic Torres
+   Date:  2/3/20 
      
    Filename: tc_order.js  
 
@@ -16,4 +16,10 @@
    The itemQty array contains the quantity ordered of each item
    
 */
-
+function 
+//Arrays
+var item = ["10582",
+   "23015",
+   "41807",
+   "10041"
+]
