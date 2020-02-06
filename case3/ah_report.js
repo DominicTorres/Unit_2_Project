@@ -5,8 +5,8 @@
    Tutorial 10
    Case Problem 3
 
-   Author:  
-   Date:   
+   Author: Dominic Torres 
+   Date: 2/5/20  
    
    Filename: ah_report.js
    
@@ -27,16 +27,29 @@
       information for the donor
       
 */
+//step 6, sets inital value to 0
+var donationTotal = 0;
+//step 7, calculates the donation total
+donors.forEach(calcSum);
+//step 8, stores text
+var summaryTable = "<table><tr><th> Donors </th><td>" + donors.length + "</td></tr> <tr><th>Total Donations</th><td>$" + donationTotal.toLocaleString() + "</td></tr></table>";
+//step 9, finds the value 
+document.getElementById("donationSummary").innerHTML = summaryTable;
+//step 10, finds the major donors
+var majorDonors = donors.filter(findMajorDonors);
+//step 11, sorts the donations by descending
+majorDonors.sort(donorSortDescending);
+//step 12, creates a table for the major donors
+var donorTable = "<table><caption>Major Donors</captions><tr><th>Donation</th><th>Donor ID</th><th>Date</th><th>Name</th><th>Address</th><th>Phone</th><th>E-Mail</th></tr>";
+//step 13, creates a row
+majorDonors.forEach(writeDonorRow);
+//step 14, adds text string
+donorTable += "</table>";
+//step 15, results in the donators
+document.getElementById("donorTable").innerHTML = donorTable;
 
 
-
-
-
-
-
-
-
-
+//---------------------------------------//
 function calcSum(donorAmt) {
    donationTotal += donorAmt[9];
 }
