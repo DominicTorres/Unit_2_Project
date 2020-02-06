@@ -5,8 +5,8 @@
    Tutorial 10
    Case Problem 4
 
-   Author: 
-   Date:   
+   Author: Dominic Torres
+   Date: 2/5/20  
    
    Filename: vw_results.js
    
@@ -23,9 +23,14 @@
    
       
 */
-
-
-
+//step 5, finds the race title
+var reportHTML = "<h1>title</h1>" + raceTitle;
+//step 6,
+loop:
+for(var totalVotes = 0; i < totalVotes; i++){
+   totalVotes.forEach(calcSum);
+   reportHTML = "<table><caption>" + race. + "</caption><tr><th>Candidate</th><th>Votes</th></tr>"
+ }
 
 
 /* Callback Function to calculate an array sum */
